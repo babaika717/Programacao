@@ -283,7 +283,7 @@
     height: auto;
     width: 230vw; }
   .why-us-main .why-us-navbar .why-us-wrapper p {
-    min-width: unset;
+    min-width: auto;
     font-size: 12px; } }
 
 @media screen and (max-width: 350px) {
