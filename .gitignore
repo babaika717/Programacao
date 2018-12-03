@@ -17,4 +17,5 @@ Thumbs.db
 
 # sublime
 sftp-config.json
-Gulpfile\.js
+
+package-lock\.json
