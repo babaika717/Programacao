@@ -1,0 +1,269 @@
+.mix-and-match {
+  position: relative;
+  padding-bottom: 180px;
+  h1 {
+    color: #f7f7f7;
+    font-size: 8.5vw;
+    position: absolute;
+    left: -55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  .multibrand {
+    font-size: 200px;
+    left: 72px;
+    top: 34px;
+  }
+  .mix-title {
+    padding-top: 60px;
+    span {
+      max-width: 341px;
+      display: block;
+      color: #646464;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 50px;
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+    }
+    .multibrand-title {
+      max-width: 755px;
+    }
+    p {
+      color: #969696;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+      max-width: 775px;
+      margin-top: 15px;
+      position: relative;
+      z-index: 2;
+      span {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+        color: #ff9300;
+        text-transform: none;
+        display: initial;
+      }
+    }
+    button {
+      width: 212px;
+      height: 40px;
+      box-shadow: 0 7px 6px rgba(0, 0, 0, 0.16);
+      border-radius: 20px;
+      border: none;
+      background-color: #ff9300;
+      margin-top: 40px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 10px;
+      text-transform: uppercase;
+      position: relative;
+      cursor: pointer;
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        position: absolute;
+        margin-right: 20px;
+        margin-top: 5px;
+        right: 0;
+        border: 1px solid transparent;
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+        transform: rotate(45deg) translateY(-5px);
+      }
+    }
+    .know-more {
+      text-transform: none;
+      padding-right: 95px;
+      margin-right: 33px;
+    }
+    .download-brochure {
+      text-transform: none;
+      color: #ff9300;
+      border: 1px solid #ff9300;
+      background: none;
+      box-shadow: none;
+      font-weight: 300;
+      line-height: 10px;
+      z-index: 1;
+      position: relative;
+      &:before {
+        border-right: 1px solid #ff9300;
+        border-top: none;
+        border-bottom: 1px solid #ff9300;
+      }
+    }
+  }
+  img {
+    position: absolute;
+    right: 160px;
+    top: -155px;
+    z-index: 0;
+  }
+  .book-bottom {
+    top: 0;
+  }
+}
+
+.mix-cloned {
+  background: url("../img/bg-cloned.png") no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1700px) {
+
+  .mix-and-match img {
+    right: 0;
+  }
+
+}
+
+@media screen and (max-width: 1366px) {
+
+  .mix-and-match .mix-title p {
+    max-width: 515px;
+  }
+
+}
+
+@media screen and (max-width: 1150px) {
+  .mix-and-match .book-bottom {
+    top: -50px;
+    right: auto;
+    left: 50%;
+    width: 65%;
+    transform: translate(-50%);
+  }
+  .mix-cloned .mix-title {
+    padding-top: 450px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  .mix-and-match img {
+    width: 69vw;
+    top: -10px;
+  }
+
+  .mix-cloned h1 {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+
+  .mix-and-match img {
+    width: 430px;
+    top: -100px;
+    right: 0;
+  }
+
+  .mix-and-match h1 {
+    font-size: 17vw;
+    text-align: center;
+    top: -130px;
+    left: 0;
+    line-height: 52px;
+  }
+
+  .mix-and-match .book-bottom {
+    width: 85%;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .mix-cloned {
+    padding-bottom: 108px;
+  }
+
+  .mix-and-match .mix-title {
+    padding-top: 150px;
+    text-align: center;
+    max-width: unset;
+  }
+
+  .mix-and-match .mix-title .multibrand-title {
+    max-width: 500px;
+  }
+
+  .mix-and-match .mix-title span {
+    font-size: 35px;
+    text-align: center;
+    max-width: 250px;
+    margin: auto;
+    line-height: 35px;
+  }
+
+  .mix-and-match .mix-title p {
+    max-width: 350px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 15px auto;
+    span {
+      line-height: 18px;
+      font-size: 12px;
+    }
+  }
+
+  .mix-and-match .mix-title button {
+    text-transform: none;
+    margin-top: 10px;
+  }
+
+  .mix-and-match .book-bottom {
+    top: -120px;
+    width: 100%;
+    max-width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .mix-and-match .mix-title .know-more {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 0;
+  }
+
+  .mix-and-match .mix-title .download-brochure {
+    margin-top: 15px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .mix-and-match .book-bottom {
+    top: -120px;
+    width: 100%;
+    max-width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .mix-and-match .book-bottom {
+    top: -125px;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 100%;
+  }
+
+}

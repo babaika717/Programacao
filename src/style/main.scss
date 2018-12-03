@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900');
+@import "partials/header";
+@import "partials/why-us-style";
+@import "partials/our-goals-style";
+@import "partials/mix-and-match-style";
+@import "partials/footer";
+
+html {
+  position: relative;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+li, ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1150px;
+  width: auto;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  height: 100%;
+}
