@@ -1,6 +1,6 @@
 .mix-and-match {
   position: relative;
-  padding-bottom: 180px;
+  padding-bottom: 230px;
   h1 {
     color: #f7f7f7;
     font-size: 8.5vw;
@@ -14,7 +14,7 @@
     text-transform: uppercase;
   }
   .multibrand {
-    font-size: 200px;
+    font-size: 10.6vw;
     left: 72px;
     top: 34px;
   }
@@ -37,7 +37,7 @@
     p {
       color: #969696;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 26px;
       max-width: 775px;
       margin-top: 15px;
@@ -61,12 +61,16 @@
       background-color: #ff9300;
       margin-top: 40px;
       color: #ffffff;
+      z-index: 0;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 10px;
+      text-align: left;
+      padding-left: 25px;
       text-transform: uppercase;
       position: relative;
       cursor: pointer;
+      overflow: hidden;
       &:before {
         content: '';
         display: inline-block;
@@ -81,11 +85,67 @@
         border-right: 1px solid #fff;
         transform: rotate(45deg) translateY(-5px);
       }
+      &:hover:before {
+        border-top: 1px solid #ff9300;
+        border-right: 1px solid #ff9300;
+      }
+
+      &:after{
+        position: absolute;
+        content: '';
+        width: 0%; height: 100%;
+        background-color: #ffffff;
+        top: 0;  left: auto; right: 0;
+        z-index: 0;
+        transition: all 350ms ease;
+        border-radius: 20px;
+      }
+
+      &:hover{
+        color: #ff9300;
+        border-radius: 20px;
+        &:after{
+          position: absolute;
+          border-radius: 20px;
+          content: '';
+          width: 100%; height: 100%;
+          background-color: #ffffff;
+          top: 0; left: 0; right: 0;
+          z-index: -1;
+        }
+      }
     }
     .know-more {
       text-transform: none;
       padding-right: 95px;
       margin-right: 33px;
+      z-index: 0;
+      position: relative;
+      &:after{
+        position: absolute;
+        content: '';
+        width: 0%; height: 100%;
+        background-color: #ffffff;
+        top: 0;  left: auto; right: 0;
+        z-index: 0;
+        transition: all 350ms ease;
+        border-radius: 20px;
+      }
+
+      &:hover{
+        color: #ff9300;
+        border-radius: 20px;
+        &:after{
+          position: absolute;
+          border-radius: 20px;
+          border: 1px solid white;
+          content: '';
+          width: 100%; height: 100%;
+          background-color: #ffffff;
+          top: 0; left: 0; right: 0;
+          z-index: -1;
+        }
+      }
     }
     .download-brochure {
       text-transform: none;
@@ -93,8 +153,11 @@
       border: 1px solid #ff9300;
       background: none;
       box-shadow: none;
-      font-weight: 300;
+      font-weight: 600;
+      text-align: left;
+      padding-left: 23px;
       line-height: 10px;
+      overflow: hidden;
       z-index: 1;
       position: relative;
       &:before {
@@ -102,12 +165,43 @@
         border-top: none;
         border-bottom: 1px solid #ff9300;
       }
+      &:hover:before {
+        border-right: 1px solid #ffffff;
+        border-top: none;
+        border-bottom: 1px solid #ffffff;
+      }
+
+      &:after{
+        position: absolute;
+        content: '';
+        width: 0%; height: 100%;
+        background: #ff9300;
+        top: 0;  left: auto; right: 0;
+        z-index: -1;
+        transition: all 350ms ease;
+        border-radius: 20px;
+      }
+
+      &:hover{
+        color: white;
+        box-shadow:none;
+        border-radius: 20px;
+        &:after{
+          position: absolute;
+          border-radius: 20px;
+          content: '';
+          width: 100%; height: 100%;
+          background: #ff9300;
+          top: 0; left: 0; right: 0;
+          z-index: -1;
+        }
+      }
     }
   }
   img {
     position: absolute;
-    right: 160px;
-    top: -155px;
+    right: 140px;
+    top: -120px;
     z-index: 0;
   }
   .book-bottom {
@@ -118,6 +212,10 @@
 .mix-cloned {
   background: url("../img/bg-cloned.png") no-repeat;
   background-size: cover;
+  padding-bottom: 150px;
+  .mix-title {
+    padding-top: 150px;
+  }
 }
 
 @media screen and (max-width: 1700px) {
@@ -133,6 +231,9 @@
   .mix-and-match .mix-title p {
     max-width: 515px;
   }
+  .mix-and-match .multibrand {
+    left: 0;
+  }
 
 }
 
@@ -146,6 +247,13 @@
   }
   .mix-cloned .mix-title {
     padding-top: 450px;
+    text-align: center;
+    .multibrand-title {
+      margin: auto;
+    }
+    p {
+      margin: auto;
+    }
   }
 }
 
@@ -156,8 +264,9 @@
     top: -10px;
   }
 
-  .mix-cloned h1 {
-    display: none;
+  .mix-and-match .multibrand {
+    font-size: 12.6vw;
+    top: 350px;
   }
 
 }
@@ -209,7 +318,7 @@
   }
 
   .mix-and-match .mix-title p {
-    max-width: 350px;
+    max-width: 285px;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
@@ -223,6 +332,8 @@
   .mix-and-match .mix-title button {
     text-transform: none;
     margin-top: 10px;
+    text-align: center;
+    padding-left: 0;
   }
 
   .mix-and-match .book-bottom {
@@ -242,6 +353,8 @@
 
   .mix-and-match .mix-title .download-brochure {
     margin-top: 15px;
+    text-align: center;
+    padding-left: 0;
   }
 
 }

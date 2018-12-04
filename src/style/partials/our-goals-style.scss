@@ -21,6 +21,9 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    iframe {
+      border: none;
+    }
   }
 }
 

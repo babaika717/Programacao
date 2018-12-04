@@ -284,7 +284,13 @@
     width: 230vw; }
   .why-us-main .why-us-navbar .why-us-wrapper p {
     min-width: auto;
-    font-size: 12px; } }
+    font-size: 12px; }
+  .why-us-main .why-us-title {
+    margin-top: -20px;
+    margin-bottom: -53px; }
+    .why-us-main .why-us-title h1 {
+      color: rgba(247, 247, 247, 0.97);
+      line-height: 1; } }
 
 @media screen and (max-width: 350px) {
   .why-us-main .why-us-slider .why-us-slide-wrapper .prev-arrow {

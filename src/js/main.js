@@ -1,4 +1,3 @@
-//= partials/app.js
 
 $(document).ready(function () {
     $('.why-us-slide-wrapper').slick({

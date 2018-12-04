@@ -82,6 +82,12 @@
                   height: 21px;
                   display: inline-block;
                   cursor: pointer;
+                  transform: scale(1);
+                  transition: all .5s;
+                  &:hover {
+                    transform: scale(1.2);
+                    transition: all .5s;
+                  }
                 }
                 &:nth-child(1) a {
                   background: url("../img/instagram.png") no-repeat;

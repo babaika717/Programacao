@@ -19,7 +19,7 @@
   height: 130px;
   position: relative;
   margin-bottom: 120px;
-  background: linear-gradient(to top, #ffffff12, #ffffff); }
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.12), #ffffff); }
   .main-header .main-header-nav {
     height: 75px;
     display: flex;
@@ -536,7 +536,13 @@
     width: 230vw; }
   .why-us-main .why-us-navbar .why-us-wrapper p {
     min-width: auto;
-    font-size: 12px; } }
+    font-size: 12px; }
+  .why-us-main .why-us-title {
+    margin-top: -20px;
+    margin-bottom: -53px; }
+    .why-us-main .why-us-title h1 {
+      color: rgba(247, 247, 247, 0.97);
+      line-height: 1; } }
 
 @media screen and (max-width: 350px) {
   .why-us-main .why-us-slider .why-us-slide-wrapper .prev-arrow {
@@ -566,6 +572,8 @@
     justify-content: center;
     position: relative;
     z-index: 2; }
+    .our-goals-main .video-wrapper iframe {
+      border: none; }
 
 @media screen and (max-width: 1280px) {
   .our-goals-main h1 {
@@ -615,7 +623,7 @@
 
 .mix-and-match {
   position: relative;
-  padding-bottom: 180px; }
+  padding-bottom: 230px; }
   .mix-and-match h1 {
     color: #f7f7f7;
     font-size: 8.5vw;
@@ -628,7 +636,7 @@
     line-height: 24px;
     text-transform: uppercase; }
   .mix-and-match .multibrand {
-    font-size: 200px;
+    font-size: 10.6vw;
     left: 72px;
     top: 34px; }
   .mix-and-match .mix-title {
@@ -648,7 +656,7 @@
     .mix-and-match .mix-title p {
       color: #969696;
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 26px;
       max-width: 775px;
       margin-top: 15px;
@@ -670,12 +678,16 @@
       background-color: #ff9300;
       margin-top: 40px;
       color: #ffffff;
+      z-index: 0;
       font-size: 14px;
-      font-weight: 500;
+      font-weight: 600;
       line-height: 10px;
+      text-align: left;
+      padding-left: 25px;
       text-transform: uppercase;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      overflow: hidden; }
       .mix-and-match .mix-title button:before {
         content: '';
         display: inline-block;
@@ -690,35 +702,130 @@
         border-right: 1px solid #fff;
         -webkit-transform: rotate(45deg) translateY(-5px);
                 transform: rotate(45deg) translateY(-5px); }
+      .mix-and-match .mix-title button:hover:before {
+        border-top: 1px solid #ff9300;
+        border-right: 1px solid #ff9300; }
+      .mix-and-match .mix-title button:after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 100%;
+        background-color: #ffffff;
+        top: 0;
+        left: auto;
+        right: 0;
+        z-index: 0;
+        transition: all 350ms ease;
+        border-radius: 20px; }
+      .mix-and-match .mix-title button:hover {
+        color: #ff9300;
+        border-radius: 20px; }
+        .mix-and-match .mix-title button:hover:after {
+          position: absolute;
+          border-radius: 20px;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: -1; }
     .mix-and-match .mix-title .know-more {
       text-transform: none;
       padding-right: 95px;
-      margin-right: 33px; }
+      margin-right: 33px;
+      z-index: 0;
+      position: relative; }
+      .mix-and-match .mix-title .know-more:after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 100%;
+        background-color: #ffffff;
+        top: 0;
+        left: auto;
+        right: 0;
+        z-index: 0;
+        transition: all 350ms ease;
+        border-radius: 20px; }
+      .mix-and-match .mix-title .know-more:hover {
+        color: #ff9300;
+        border-radius: 20px; }
+        .mix-and-match .mix-title .know-more:hover:after {
+          position: absolute;
+          border-radius: 20px;
+          border: 1px solid white;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background-color: #ffffff;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: -1; }
     .mix-and-match .mix-title .download-brochure {
       text-transform: none;
       color: #ff9300;
       border: 1px solid #ff9300;
       background: none;
       box-shadow: none;
-      font-weight: 300;
+      font-weight: 600;
+      text-align: left;
+      padding-left: 23px;
       line-height: 10px;
+      overflow: hidden;
       z-index: 1;
       position: relative; }
       .mix-and-match .mix-title .download-brochure:before {
         border-right: 1px solid #ff9300;
         border-top: none;
         border-bottom: 1px solid #ff9300; }
+      .mix-and-match .mix-title .download-brochure:hover:before {
+        border-right: 1px solid #ffffff;
+        border-top: none;
+        border-bottom: 1px solid #ffffff; }
+      .mix-and-match .mix-title .download-brochure:after {
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 100%;
+        background: #ff9300;
+        top: 0;
+        left: auto;
+        right: 0;
+        z-index: -1;
+        transition: all 350ms ease;
+        border-radius: 20px; }
+      .mix-and-match .mix-title .download-brochure:hover {
+        color: white;
+        box-shadow: none;
+        border-radius: 20px; }
+        .mix-and-match .mix-title .download-brochure:hover:after {
+          position: absolute;
+          border-radius: 20px;
+          content: '';
+          width: 100%;
+          height: 100%;
+          background: #ff9300;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: -1; }
   .mix-and-match img {
     position: absolute;
-    right: 160px;
-    top: -155px;
+    right: 140px;
+    top: -120px;
     z-index: 0; }
   .mix-and-match .book-bottom {
     top: 0; }
 
 .mix-cloned {
   background: url("../img/bg-cloned.png") no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 150px; }
+  .mix-cloned .mix-title {
+    padding-top: 150px; }
 
 @media screen and (max-width: 1700px) {
   .mix-and-match img {
@@ -726,7 +833,9 @@
 
 @media screen and (max-width: 1366px) {
   .mix-and-match .mix-title p {
-    max-width: 515px; } }
+    max-width: 515px; }
+  .mix-and-match .multibrand {
+    left: 0; } }
 
 @media screen and (max-width: 1150px) {
   .mix-and-match .book-bottom {
@@ -737,14 +846,20 @@
     -webkit-transform: translate(-50%);
             transform: translate(-50%); }
   .mix-cloned .mix-title {
-    padding-top: 450px; } }
+    padding-top: 450px;
+    text-align: center; }
+    .mix-cloned .mix-title .multibrand-title {
+      margin: auto; }
+    .mix-cloned .mix-title p {
+      margin: auto; } }
 
 @media screen and (max-width: 991px) {
   .mix-and-match img {
     width: 69vw;
     top: -10px; }
-  .mix-cloned h1 {
-    display: none; } }
+  .mix-and-match .multibrand {
+    font-size: 12.6vw;
+    top: 350px; } }
 
 @media screen and (max-width: 760px) {
   .mix-and-match img {
@@ -776,7 +891,7 @@
     margin: auto;
     line-height: 35px; }
   .mix-and-match .mix-title p {
-    max-width: 350px;
+    max-width: 285px;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
@@ -786,7 +901,9 @@
       font-size: 12px; }
   .mix-and-match .mix-title button {
     text-transform: none;
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-align: center;
+    padding-left: 0; }
   .mix-and-match .book-bottom {
     top: -120px;
     width: 100%;
@@ -800,7 +917,9 @@
     margin-left: auto;
     padding-right: 0; }
   .mix-and-match .mix-title .download-brochure {
-    margin-top: 15px; } }
+    margin-top: 15px;
+    text-align: center;
+    padding-left: 0; } }
 
 @media screen and (max-width: 500px) {
   .mix-and-match .book-bottom {
@@ -889,7 +1008,14 @@
                 width: 21px;
                 height: 21px;
                 display: inline-block;
-                cursor: pointer; }
+                cursor: pointer;
+                -webkit-transform: scale(1);
+                        transform: scale(1);
+                transition: all .5s; }
+                .main-footer .footer-wrapper .footer-left .footer-columns .footer-column-3 .footer-soc ul li a:hover {
+                  -webkit-transform: scale(1.2);
+                          transform: scale(1.2);
+                  transition: all .5s; }
               .main-footer .footer-wrapper .footer-left .footer-columns .footer-column-3 .footer-soc ul li:nth-child(1) a {
                 background: url("../img/instagram.png") no-repeat; }
               .main-footer .footer-wrapper .footer-left .footer-columns .footer-column-3 .footer-soc ul li:nth-child(2) a {

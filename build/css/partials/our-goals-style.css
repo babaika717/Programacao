@@ -20,6 +20,8 @@
     justify-content: center;
     position: relative;
     z-index: 2; }
+    .our-goals-main .video-wrapper iframe {
+      border: none; }
 
 @media screen and (max-width: 1280px) {
   .our-goals-main h1 {

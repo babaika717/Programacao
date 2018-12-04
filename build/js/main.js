@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
     $('.why-us-slide-wrapper').slick({
         dots: false,

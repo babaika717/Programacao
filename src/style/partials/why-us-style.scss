@@ -337,6 +337,14 @@
     min-width: auto;
     font-size: 12px;
   }
+  .why-us-main .why-us-title {
+    margin-top: -20px;
+    margin-bottom: -53px;
+    h1 {
+      color: rgba(247, 247, 247, 0.97);
+      line-height: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 350px) {
