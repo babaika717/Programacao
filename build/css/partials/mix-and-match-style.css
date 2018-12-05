@@ -1,6 +1,6 @@
 .mix-and-match {
   position: relative;
-  padding-bottom: 230px; }
+  padding-bottom: 280px; }
   .mix-and-match h1 {
     color: #f7f7f7;
     font-size: 8.5vw;
@@ -15,7 +15,7 @@
   .mix-and-match .multibrand {
     font-size: 10.6vw;
     left: 72px;
-    top: 34px; }
+    top: 110px; }
   .mix-and-match .mix-title {
     padding-top: 60px; }
     .mix-and-match .mix-title span {
@@ -57,7 +57,7 @@
       color: #ffffff;
       z-index: 0;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 10px;
       text-align: left;
       padding-left: 25px;
@@ -147,7 +147,7 @@
       border: 1px solid #ff9300;
       background: none;
       box-shadow: none;
-      font-weight: 600;
+      font-weight: 500;
       text-align: left;
       padding-left: 23px;
       line-height: 10px;
@@ -191,11 +191,11 @@
           z-index: -1; }
   .mix-and-match img {
     position: absolute;
-    right: 140px;
-    top: -120px;
+    right: 116px;
+    top: -110px;
     z-index: 0; }
   .mix-and-match .book-bottom {
-    top: 0; }
+    top: 50px; }
 
 .mix-cloned {
   background: url("../img/bg-cloned.png") no-repeat;
@@ -255,6 +255,8 @@
 @media screen and (max-width: 600px) {
   .mix-cloned {
     padding-bottom: 108px; }
+  .mix-and-match .multibrand {
+    top: 110px; }
   .mix-and-match .mix-title {
     padding-top: 150px;
     text-align: center;
@@ -268,11 +270,11 @@
     margin: auto;
     line-height: 35px; }
   .mix-and-match .mix-title p {
-    max-width: 285px;
+    max-width: 290px;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
-    margin: 15px auto; }
+    margin: 15px auto 25px; }
     .mix-and-match .mix-title p span {
       line-height: 18px;
       font-size: 12px; }
@@ -305,7 +307,9 @@
     max-width: 75%;
     left: 50%;
     -webkit-transform: translate(-50%);
-            transform: translate(-50%); } }
+            transform: translate(-50%); }
+  .mix-and-match {
+    padding-bottom: 250px; } }
 
 @media screen and (max-width: 400px) {
   .mix-and-match .book-bottom {
@@ -315,3 +319,7 @@
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     max-width: 100%; } }
+
+@media screen and (max-width: 360px) {
+  .mix-and-match .mix-title span {
+    font-size: 30px; } }

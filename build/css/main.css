@@ -374,10 +374,10 @@
   .why-us-main .why-us-slider .why-us-slide-wrapper {
     display: flex;
     max-width: 1150px;
-    margin: auto; }
+    margin: auto;
+    height: 300px; }
     .why-us-main .why-us-slider .why-us-slide-wrapper .why-us-slide-block {
-      margin-right: 10px;
-      margin-left: 10px;
+      margin: 0 25px 20px;
       box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
       background-color: #ffffff;
       max-height: 281px;
@@ -410,6 +410,7 @@
     .why-us-main .why-us-slider .why-us-slide-wrapper .prev-arrow {
       width: 40px;
       height: 40px;
+      outline: 0;
       box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
       border: 1px solid #ff9300;
       background-color: #ffffff;
@@ -438,6 +439,7 @@
         border-bottom: 1px solid #ffffff; }
     .why-us-main .why-us-slider .why-us-slide-wrapper .next-arrow {
       width: 40px;
+      outline: 0;
       height: 40px;
       box-shadow: 0 5px 6px rgba(0, 0, 0, 0.16);
       border: 1px solid #ff9300;
@@ -499,6 +501,7 @@
     max-width: 75%;
     margin: auto;
     font-size: 12px;
+    line-height: 13px;
     text-align: center; }
   .why-us-main .why-us-background {
     right: -150px;
@@ -538,8 +541,8 @@
     min-width: auto;
     font-size: 12px; }
   .why-us-main .why-us-title {
-    margin-top: -20px;
-    margin-bottom: -53px; }
+    margin-top: 20px;
+    margin-bottom: -68px; }
     .why-us-main .why-us-title h1 {
       color: rgba(247, 247, 247, 0.97);
       line-height: 1; } }
@@ -585,7 +588,8 @@
     max-width: 90%;
     min-height: 400px; }
     .our-goals-main .video-wrapper iframe {
-      height: auto; }
+      height: auto;
+      min-height: 430px; }
   .our-goals-main {
     background: none; } }
 
@@ -600,6 +604,8 @@
 @media screen and (max-width: 600px) {
   .our-goals-main .video-wrapper {
     min-height: 290px; }
+    .our-goals-main .video-wrapper iframe {
+      min-height: 290px; }
   .our-goals-main h1 {
     font-size: 16vw;
     line-height: 70px;
@@ -619,11 +625,13 @@
 
 @media screen and (max-width: 360px) {
   .our-goals-main .video-wrapper {
-    min-height: 180px; } }
+    min-height: 180px; }
+    .our-goals-main .video-wrapper iframe {
+      min-height: 180px; } }
 
 .mix-and-match {
   position: relative;
-  padding-bottom: 230px; }
+  padding-bottom: 280px; }
   .mix-and-match h1 {
     color: #f7f7f7;
     font-size: 8.5vw;
@@ -638,7 +646,7 @@
   .mix-and-match .multibrand {
     font-size: 10.6vw;
     left: 72px;
-    top: 34px; }
+    top: 110px; }
   .mix-and-match .mix-title {
     padding-top: 60px; }
     .mix-and-match .mix-title span {
@@ -680,7 +688,7 @@
       color: #ffffff;
       z-index: 0;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 10px;
       text-align: left;
       padding-left: 25px;
@@ -770,7 +778,7 @@
       border: 1px solid #ff9300;
       background: none;
       box-shadow: none;
-      font-weight: 600;
+      font-weight: 500;
       text-align: left;
       padding-left: 23px;
       line-height: 10px;
@@ -814,11 +822,11 @@
           z-index: -1; }
   .mix-and-match img {
     position: absolute;
-    right: 140px;
-    top: -120px;
+    right: 116px;
+    top: -110px;
     z-index: 0; }
   .mix-and-match .book-bottom {
-    top: 0; }
+    top: 50px; }
 
 .mix-cloned {
   background: url("../img/bg-cloned.png") no-repeat;
@@ -878,6 +886,8 @@
 @media screen and (max-width: 600px) {
   .mix-cloned {
     padding-bottom: 108px; }
+  .mix-and-match .multibrand {
+    top: 110px; }
   .mix-and-match .mix-title {
     padding-top: 150px;
     text-align: center;
@@ -891,11 +901,11 @@
     margin: auto;
     line-height: 35px; }
   .mix-and-match .mix-title p {
-    max-width: 285px;
+    max-width: 290px;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
-    margin: 15px auto; }
+    margin: 15px auto 25px; }
     .mix-and-match .mix-title p span {
       line-height: 18px;
       font-size: 12px; }
@@ -928,7 +938,9 @@
     max-width: 75%;
     left: 50%;
     -webkit-transform: translate(-50%);
-            transform: translate(-50%); } }
+            transform: translate(-50%); }
+  .mix-and-match {
+    padding-bottom: 250px; } }
 
 @media screen and (max-width: 400px) {
   .mix-and-match .book-bottom {
@@ -938,6 +950,10 @@
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
     max-width: 100%; } }
+
+@media screen and (max-width: 360px) {
+  .mix-and-match .mix-title span {
+    font-size: 30px; } }
 
 .main-footer {
   background-color: #393838; }

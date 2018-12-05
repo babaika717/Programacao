@@ -40,6 +40,7 @@
     min-height: 400px;
     iframe {
       height: auto;
+      min-height: 430px;
     }
   }
   .our-goals-main {
@@ -61,6 +62,9 @@
 @media screen and (max-width: 600px) {
   .our-goals-main .video-wrapper {
     min-height: 290px;
+    iframe {
+      min-height: 290px;
+    }
   }
   .our-goals-main h1 {
     font-size: 16vw;
@@ -89,5 +93,14 @@
 @media screen and (max-width: 360px) {
   .our-goals-main .video-wrapper {
     min-height: 180px;
+    iframe {
+      min-height: 180px;
+    }
+  }
+}
+
+@media all and (-ms-high-contrast:none) and (max-width: 998px) {
+  *::-ms-backdrop, .our-goals-main .video-wrapper {
+
   }
 }

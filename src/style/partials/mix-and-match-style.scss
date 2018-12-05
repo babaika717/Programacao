@@ -1,6 +1,7 @@
 .mix-and-match {
   position: relative;
-  padding-bottom: 230px;
+  padding-bottom: 280px;
+
   h1 {
     color: #f7f7f7;
     font-size: 8.5vw;
@@ -16,10 +17,11 @@
   .multibrand {
     font-size: 10.6vw;
     left: 72px;
-    top: 34px;
+    top: 110px;
   }
   .mix-title {
     padding-top: 60px;
+
     span {
       max-width: 341px;
       display: block;
@@ -34,6 +36,7 @@
     .multibrand-title {
       max-width: 755px;
     }
+
     p {
       color: #969696;
       font-size: 20px;
@@ -43,6 +46,7 @@
       margin-top: 15px;
       position: relative;
       z-index: 2;
+
       span {
         font-size: 20px;
         font-weight: 400;
@@ -63,7 +67,7 @@
       color: #ffffff;
       z-index: 0;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 10px;
       text-align: left;
       padding-left: 25px;
@@ -71,6 +75,7 @@
       position: relative;
       cursor: pointer;
       overflow: hidden;
+
       &:before {
         content: '';
         display: inline-block;
@@ -85,6 +90,7 @@
         border-right: 1px solid #fff;
         transform: rotate(45deg) translateY(-5px);
       }
+
       &:hover:before {
         border-top: 1px solid #ff9300;
         border-right: 1px solid #ff9300;
@@ -104,6 +110,7 @@
       &:hover{
         color: #ff9300;
         border-radius: 20px;
+
         &:after{
           position: absolute;
           border-radius: 20px;
@@ -121,6 +128,7 @@
       margin-right: 33px;
       z-index: 0;
       position: relative;
+
       &:after{
         position: absolute;
         content: '';
@@ -135,6 +143,7 @@
       &:hover{
         color: #ff9300;
         border-radius: 20px;
+
         &:after{
           position: absolute;
           border-radius: 20px;
@@ -153,18 +162,20 @@
       border: 1px solid #ff9300;
       background: none;
       box-shadow: none;
-      font-weight: 600;
+      font-weight: 500;
       text-align: left;
       padding-left: 23px;
       line-height: 10px;
       overflow: hidden;
       z-index: 1;
       position: relative;
+
       &:before {
         border-right: 1px solid #ff9300;
         border-top: none;
         border-bottom: 1px solid #ff9300;
       }
+
       &:hover:before {
         border-right: 1px solid #ffffff;
         border-top: none;
@@ -186,6 +197,7 @@
         color: white;
         box-shadow:none;
         border-radius: 20px;
+
         &:after{
           position: absolute;
           border-radius: 20px;
@@ -198,24 +210,29 @@
       }
     }
   }
+
   img {
     position: absolute;
-    right: 140px;
-    top: -120px;
+    right: 116px;
+    top: -110px;
     z-index: 0;
   }
+
   .book-bottom {
-    top: 0;
+    top: 50px;
   }
+
 }
 
 .mix-cloned {
   background: url("../img/bg-cloned.png") no-repeat;
   background-size: cover;
   padding-bottom: 150px;
+
   .mix-title {
     padding-top: 150px;
   }
+
 }
 
 @media screen and (max-width: 1700px) {
@@ -231,6 +248,7 @@
   .mix-and-match .mix-title p {
     max-width: 515px;
   }
+
   .mix-and-match .multibrand {
     left: 0;
   }
@@ -238,6 +256,7 @@
 }
 
 @media screen and (max-width: 1150px) {
+
   .mix-and-match .book-bottom {
     top: -50px;
     right: auto;
@@ -245,16 +264,20 @@
     width: 65%;
     transform: translate(-50%);
   }
+
   .mix-cloned .mix-title {
     padding-top: 450px;
     text-align: center;
+
     .multibrand-title {
       margin: auto;
     }
+
     p {
       margin: auto;
     }
   }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -299,6 +322,10 @@
     padding-bottom: 108px;
   }
 
+  .mix-and-match .multibrand {
+    top: 110px;
+  }
+
   .mix-and-match .mix-title {
     padding-top: 150px;
     text-align: center;
@@ -318,11 +345,12 @@
   }
 
   .mix-and-match .mix-title p {
-    max-width: 285px;
+    max-width: 290px;
     text-align: center;
     font-size: 12px;
     line-height: 18px;
-    margin: 15px auto;
+    margin: 15px auto 25px;
+
     span {
       line-height: 18px;
       font-size: 12px;
@@ -360,6 +388,7 @@
 }
 
 @media screen and (max-width: 500px) {
+
   .mix-and-match .book-bottom {
     top: -120px;
     width: 100%;
@@ -367,16 +396,28 @@
     left: 50%;
     transform: translate(-50%);
   }
+  .mix-and-match {
+    padding-bottom: 250px;
+  }
 
 }
 
 @media screen and (max-width: 400px) {
+
   .mix-and-match .book-bottom {
     top: -125px;
     width: 100%;
     left: 50%;
     transform: translate(-50%);
     max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .mix-and-match .mix-title span {
+    font-size: 30px;
   }
 
 }
