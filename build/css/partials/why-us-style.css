@@ -130,7 +130,9 @@
       background-color: #ffffff;
       max-height: 281px;
       height: 282px;
-      max-width: 269px; }
+      max-width: 269px;
+      transition: all .5s ease;
+      cursor: pointer; }
       .why-us-main .why-us-slider .why-us-slide-wrapper .why-us-slide-block img {
         width: 100%; }
       .why-us-main .why-us-slider .why-us-slide-wrapper .why-us-slide-block h4 {
@@ -155,6 +157,10 @@
         padding: 20px 15px 10px;
         display: block;
         text-align: center; }
+      .why-us-main .why-us-slider .why-us-slide-wrapper .why-us-slide-block:hover {
+        -webkit-transform: scale(1.07);
+                transform: scale(1.07);
+        transition: all .5s ease; }
     .why-us-main .why-us-slider .why-us-slide-wrapper .prev-arrow {
       width: 40px;
       height: 40px;

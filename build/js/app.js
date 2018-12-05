@@ -1,4 +1,7 @@
 
+// import $ from 'jquery';
+// import slick from "../../../node_modules/slick-carousel/slick/slick.min";
+
 $(document).ready(function () {
     $('.why-us-slide-wrapper').slick({
         dots: false,
@@ -45,16 +48,14 @@ $(document).ready(function () {
         ]
     });
 
-
     $('.header-hamburger-menu').on('click', function () {
         $(this).toggleClass('menu-opened');
         $('.header-mobile-menu').toggleClass('opened-mobile-wrapper');
         $('body').toggleClass('body-overflow');
         $('html').toggleClass('body-overflow');
     });
-
-
-
+    
+    
     $(".why-us-wrapper").hover(function() {
         $(this).find("p")
             .stop(true)
@@ -67,5 +68,4 @@ $(document).ready(function () {
                         .dequeue('fx');
                 });
     });
-
 });

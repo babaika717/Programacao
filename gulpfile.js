@@ -1,13 +1,14 @@
 "use strict";
 
-var gulp 	 	= require("gulp"),
-	watch 	 	= require("gulp-watch"),
-	preFixer 	= require("gulp-autoprefixer"),
-	sass 	 	= require("gulp-sass"),
-	rigger 	 	= require("gulp-rigger"),
-	browserSync	= require("browser-sync"),
-	plumber		= require("gulp-plumber"),
-	reload 	 	= browserSync.reload;
+var   gulp 	 		= require("gulp"),
+	  watch 	 	= require("gulp-watch"),
+	  preFixer 		= require("gulp-autoprefixer"),
+	  sass 	 		= require("gulp-sass"),
+	  rigger 	 	= require("gulp-rigger"),
+	  browserSync	= require("browser-sync"),
+	  plumber		= require("gulp-plumber"),
+	  // babel			= require("gulp-babel"),
+	  reload 	 	= browserSync.reload;
 
 var path = {
 
@@ -18,7 +19,7 @@ var path = {
 	},
 	src: {
 		html: "src/*html",
-		js: "src/js/main.js",
+		js: "src/js/app.js",
 		style: "src/style/**/*.scss"
 	},
 	watch: {	// 	пути к файлам, за которыми будем следить

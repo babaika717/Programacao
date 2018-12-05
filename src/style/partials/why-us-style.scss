@@ -143,6 +143,8 @@
         max-height: 281px;
         height: 282px;
         max-width: 269px;
+        transition: all .5s ease;
+        cursor: pointer;
         img {
           width: 100%;
         }
@@ -169,6 +171,10 @@
           padding: 20px 15px 10px;
           display: block;
           text-align: center;
+        }
+        &:hover {
+          transform: scale(1.07);
+          transition: all .5s ease;
         }
       }
       .prev-arrow {
