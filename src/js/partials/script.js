@@ -1,3 +1,4 @@
+
 $('.header-hamburger-menu').on('click', function () {
     $(this).toggleClass('menu-opened');
     $('.header-mobile-menu').toggleClass('opened-mobile-wrapper');

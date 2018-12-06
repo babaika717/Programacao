@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700,900");
-@import url(../../node_modules/slick-carousel/slick/slick.css);
 .container-header {
   max-width: 1400px;
   width: auto;

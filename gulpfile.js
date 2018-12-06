@@ -7,7 +7,6 @@ var   gulp 	 		= require("gulp"),
 	  rigger 	 	= require("gulp-rigger"),
 	  browserSync	= require("browser-sync"),
 	  plumber		= require("gulp-plumber"),
-	  // babel			= require("gulp-babel"),
 	  reload 	 	= browserSync.reload;
 
 var path = {
@@ -91,8 +90,8 @@ var path = {
 		});
 	});
 
-	// делаем дефолтный таск для запуска всей
+	// делаем дефолтный таск для запуска всей сборки
 
-	gulp.task("default", ["build", "webserver", "watch"]);
+	gulp.task("default", ["build" ,"webserver", "watch"]);
 
 
