@@ -135,9 +135,10 @@
       display: flex;
       max-width: 1150px;
       margin: auto;
-      height: 300px;
+      align-items: center;
+      height: 330px;
       .why-us-slide-block {
-        margin: 0 25px 20px;
+        margin: 10px 9px 20px;
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.16);
         background-color: #ffffff;
         max-height: 281px;
